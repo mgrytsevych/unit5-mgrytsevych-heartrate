@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:id="@+id/llHeartRateRow">
+
+        <TextView
+            android:text="@string/pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPulse"
+            tools:text="Pulse:  "
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="@string/RangeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDisplayPulse"
+            tools:text="00.00"
+            android:layout_weight="0.03" />
+
+        <TextView
+            android:text="@string/displayRangeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDisplayRange"
+            android:layout_weight="1"
+            tools:text="Display Range" />
+
+        <TextView
+            android:text="@string/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDisplayDscrpt"
+            android:layout_weight="1"
+            tools:text="Description" />
+
+    </LinearLayout>
+</LinearLayout>
